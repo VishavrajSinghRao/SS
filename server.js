@@ -18,12 +18,11 @@ app.get('/api/take-screenshot', async (req, res) => {
     const screenshot = await page.screenshot();
     await browser.close();
 
-    // Send screenshot back as PNG image
+   
     res.setHeader('Content-Type', 'image/png');
     res.send(screenshot);
 });
 
-// Start the server
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
