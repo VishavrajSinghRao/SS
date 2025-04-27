@@ -1,0 +1,133 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaf4f4;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+/* Container for the infographic */
+.infographic {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f6f7fb 30%, #e6e9f0 100%);
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #006d77;
+    font-weight: 700;
+}
+
+/* Timeline layout */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 40px;
+    border-left: 4px solid #006d77;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+    background: #006d77;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -30px;
+    top: 0;
+}
+
+.content {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.content h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #0077b6;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Button styling */
+button {
+    display: block;
+    width: 220px;
+    margin: 40px auto 0;
+    padding: 14px 24px;
+    font-size: 1.2rem;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(255, 107, 107, 0.4);
+}
+
+button:hover {
+    background-color: #e63946;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .content h2 {
+        font-size: 1.4rem;
+    }
+
+    .content p {
+        font-size: 0.95rem;
+    }
+
+    button {
+        width: 180px;
+        font-size: 1.1rem;
+    }
+}
